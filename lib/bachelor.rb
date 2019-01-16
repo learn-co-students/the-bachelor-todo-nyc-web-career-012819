@@ -67,6 +67,7 @@ def get_average_age_for_season(data, season)
   while i < data[season].length
     counter += 1
     age_sum += data[season][i]["age"].to_f
+    # I don't understand why .to_i doesn't work in this problem.
     i += 1
   end
   return (age_sum / counter).round
